@@ -8,10 +8,10 @@ import axios from "axios";
 
 const BASE_URL =
     process.env.REACT_APP_API_URL ||
-    "http://localhost:8080/api";
+    "https://sambhi-digital-backend-production.up.railway.app/api";
 
 export const FILE_BASE_URL =
-    "http://localhost:8080";
+    "https://sambhi-digital-backend-production.up.railway.app";
 /* ==========================================
    AXIOS INSTANCE
 ========================================== */
