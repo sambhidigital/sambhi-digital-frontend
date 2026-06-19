@@ -1,0 +1,59 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient -->
+    <linearGradient id="neonBlue" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F0FF"></stop>
+      <stop offset="100%" stop-color="#0066FF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#neonBlue)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Browser Window -->
+    <rect x="86" y="96" width="340" height="260" rx="24"></rect>
+
+    <!-- Browser Top Bar -->
+    <line x1="86" y1="145" x2="426" y2="145"></line>
+
+    <!-- Browser Dots -->
+    <circle cx="120" cy="120" r="6"></circle>
+    <circle cx="145" cy="120" r="6"></circle>
+    <circle cx="170" cy="120" r="6"></circle>
+
+    <!-- Code Brackets -->
+    <path d="M200 210 L160 255 L200 300"></path>
+    <path d="M312 210 L352 255 L312 300"></path>
+
+    <!-- Slash -->
+    <line x1="275" y1="190" x2="237" y2="320"></line>
+
+    <!-- Floating UI Elements -->
+    <rect x="120" y="390" width="90" height="28" rx="10"></rect>
+    <rect x="230" y="390" width="60" height="28" rx="10"></rect>
+    <rect x="310" y="390" width="82" height="28" rx="10"></rect>
+
+    <!-- Connection Lines -->
+    <line x1="165" y1="356" x2="165" y2="390"></line>
+    <line x1="260" y1="356" x2="260" y2="390"></line>
+    <line x1="351" y1="356" x2="351" y2="390"></line>
+
+    <!-- Decorative Circuit Nodes -->
+    <circle cx="90" cy="255" r="7"></circle>
+    <line x1="97" y1="255" x2="130" y2="255"></line>
+
+    <circle cx="422" cy="255" r="7"></circle>
+    <line x1="382" y1="255" x2="415" y2="255"></line>
+
+  </g>
+
+</svg>

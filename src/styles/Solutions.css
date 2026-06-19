@@ -1,0 +1,580 @@
+/* =========================================================
+   SOLUTIONS PAGE
+========================================================= */
+
+.solutions-page {
+    background: #020617;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.solutions-page section {
+    padding: 100px 0;
+}
+
+.solutions-page .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.solutions-hero-section {
+    position: relative;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(3, 7, 18, 0.85),
+            rgba(3, 7, 18, 0.9)
+        ),
+        url("/public/assets/images/about/about-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.solutions-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.solutions-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.solutions-hero-content {
+    max-width: 950px;
+    margin: auto;
+}
+
+.solutions-hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.solutions-hero-content p {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    line-height: 1.9;
+    max-width: 850px;
+    margin: auto;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.section-title {
+    margin-bottom: 70px;
+}
+
+.section-title.text-center {
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    color: #ffffff;
+    position: relative;
+}
+
+.section-title h2::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #06b6d4
+    );
+}
+
+.section-title p {
+    color: #94a3b8;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =========================================================
+   GLASS CARD
+========================================================= */
+
+.glass-card,
+.solution-card,
+.industry-card,
+.case-study-card,
+.why-solution-card,
+.tech-card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 24px;
+    transition: all .4s ease;
+}
+
+.glass-card:hover,
+.solution-card:hover,
+.industry-card:hover,
+.case-study-card:hover,
+.why-solution-card:hover,
+.tech-card:hover {
+    transform: translateY(-10px);
+    border-color: #3b82f6;
+    box-shadow: 0 20px 50px rgba(59,130,246,0.25);
+}
+
+/* =========================================================
+   CORE SOLUTIONS
+========================================================= */
+
+.solutions-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+    gap: 30px;
+}
+
+.solution-card {
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100%;
+
+    padding: 0;
+
+    cursor: pointer;
+}
+
+.solution-image {
+
+    height: 220px;
+
+    overflow: hidden;
+}
+
+.solution-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: all 0.5s ease;
+}
+
+.solution-card:hover .solution-image img {
+
+    transform: scale(1.08);
+}
+
+.solution-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex: 1;
+
+    padding: 30px;
+}
+
+.solution-content .p-tag {
+
+    width: fit-content;
+
+    margin-bottom: 18px;
+}
+
+.solution-content h3 {
+
+    font-size: 1.5rem;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+    margin-bottom: 15px;
+
+    min-height: 60px;
+}
+
+.solution-content p {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    flex: 1;
+
+    margin-bottom: 25px;
+}
+
+.solution-content .service-btn-link {
+
+    margin-top: auto;
+
+    display: inline-flex;
+}
+
+.solution-content .p-button {
+
+    width: 100%;
+}
+/* =========================================================
+   INDUSTRY SOLUTIONS
+========================================================= */
+
+.industry-solutions-section {
+    background: #0f172a;
+}
+
+.industry-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+
+.industry-card {
+    overflow: hidden;
+}
+
+.industry-image {
+    padding: 15px;
+    background: #0f172a;
+}
+
+.industry-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.industry-card:hover .industry-image img {
+    transform: scale(1.08);
+}
+
+.industry-content {
+    padding: 30px;
+}
+
+.industry-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.industry-content p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* =========================================================
+   WHY SOLUTIONS
+========================================================= */
+
+.why-solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.why-solution-card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.why-solution-card i {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.why-solution-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+}
+
+.why-solution-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CASE STUDIES
+========================================================= */
+
+.case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+
+.case-study-card {
+    overflow: hidden;
+}
+
+.case-study-image {
+    background: #0f172a;
+    padding: 15px;
+}
+
+.case-study-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.case-study-image img:hover {
+    transform: scale(1.03);
+}
+
+.case-study-card:hover .case-study-image img {
+    transform: scale(1.08);
+}
+
+.case-study-content {
+    padding: 30px;
+}
+
+.case-study-header {
+    margin-bottom: 20px;
+}
+
+.case-study-content h3 {
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.case-study-content p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+.case-study-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 25px 0;
+}
+
+.tech-badge {
+    background: rgba(59,130,246,0.15);
+    color: #60a5fa;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.case-study-outcome {
+    margin-bottom: 25px;
+}
+
+.case-study-outcome h4 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+/* =========================================================
+   TECHNOLOGY STACK
+========================================================= */
+
+.solution-tech-section {
+    background: #0f172a;
+}
+
+.solution-tech-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.tech-card {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.tech-card:hover {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+}
+
+.industry-image img,
+.case-study-image img {
+    cursor: pointer;
+}
+
+/* =========================================
+   IMAGE POPUP DIALOG
+========================================= */
+
+.p-dialog-mask {
+    z-index: 9999 !important;
+}
+
+.p-dialog {
+    z-index: 10000 !important;
+}
+
+.popup-image {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.p-dialog-content {
+    text-align: center;
+}
+
+/* =========================================================
+   PRIMEREACT BUTTONS
+========================================================= */
+
+.p-button {
+    transition: all .3s ease;
+}
+
+.p-button:hover {
+    transform: translateY(-2px);
+}
+
+.industry-card .p-button,
+.case-study-card .p-button {
+    margin-top: 10px;
+}
+
+/* =========================================================
+   PRIMEREACT TAG
+========================================================= */
+
+.p-tag {
+    font-weight: 600;
+    padding: 6px 12px;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .solutions-grid,
+    .why-solutions-grid,
+    .solution-tech-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .industry-solutions-grid,
+    .case-study-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .solutions-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .solutions-grid,
+    .why-solutions-grid,
+    .solution-tech-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solutions-page section {
+        padding: 70px 0;
+    }
+
+    .solutions-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .solutions-hero-content p {
+        font-size: 1rem;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .industry-image img,
+    .case-study-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .industry-content,
+    .case-study-content {
+        padding: 20px;
+    }
+
+    .solution-card,
+    .why-solution-card,
+    .tech-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .solutions-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .solutions-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .solution-image {
+
+        height: 220px;
+    }
+}

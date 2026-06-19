@@ -1,0 +1,98 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient -->
+    <linearGradient id="devopsGradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F0FF"></stop>
+      <stop offset="100%" stop-color="#005DFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#devopsGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Infinity Loop -->
+    <path d="
+      M170 256
+      C170 200 220 180 256 220
+      C292 260 342 312 392 312
+      C430 312 452 286 452 256
+      C452 226 430 200 392 200
+      C342 200 292 252 256 292
+      C220 332 170 312 170 256Z
+    "></path>
+
+    <!-- Left Cloud -->
+    <path d="
+      M120 180
+      C120 155 138 138 162 138
+      C170 118 188 105 210 105
+      C238 105 260 125 262 152
+      C285 155 302 173 302 198
+      C302 226 280 248 252 248
+      H165
+      C140 248 120 228 120 203Z
+    "></path>
+
+    <!-- Right Cloud -->
+    <path d="
+      M255 340
+      C255 315 273 298 297 298
+      C305 278 323 265 345 265
+      C373 265 395 285 397 312
+      C420 315 437 333 437 358
+      C437 386 415 408 387 408
+      H300
+      C275 408 255 388 255 363Z
+    "></path>
+
+    <!-- Server Stack -->
+    <rect x="80" y="320" width="80" height="28" rx="8"></rect>
+    <rect x="80" y="360" width="80" height="28" rx="8"></rect>
+    <rect x="80" y="400" width="80" height="28" rx="8"></rect>
+
+    <!-- Server Indicators -->
+    <circle cx="98" cy="334" r="4"></circle>
+    <circle cx="98" cy="374" r="4"></circle>
+    <circle cx="98" cy="414" r="4"></circle>
+
+    <!-- Connection Lines -->
+    <line x1="160" y1="374" x2="210" y2="320"></line>
+    <line x1="302" y1="198" x2="350" y2="220"></line>
+    <line x1="345" y1="408" x2="345" y2="448"></line>
+
+    <!-- Gear -->
+    <circle cx="345" cy="448" r="24"></circle>
+    <circle cx="345" cy="448" r="10"></circle>
+
+    <!-- Gear Teeth -->
+    <line x1="345" y1="414" x2="345" y2="426"></line>
+    <line x1="345" y1="470" x2="345" y2="482"></line>
+
+    <line x1="311" y1="448" x2="323" y2="448"></line>
+    <line x1="367" y1="448" x2="379" y2="448"></line>
+
+    <line x1="322" y1="425" x2="330" y2="433"></line>
+    <line x1="360" y1="463" x2="368" y2="471"></line>
+
+    <line x1="322" y1="471" x2="330" y2="463"></line>
+    <line x1="360" y1="433" x2="368" y2="425"></line>
+
+    <!-- Circuit Nodes -->
+    <circle cx="60" cy="256" r="7"></circle>
+    <line x1="67" y1="256" x2="110" y2="256"></line>
+
+    <circle cx="472" cy="256" r="7"></circle>
+    <line x1="402" y1="256" x2="465" y2="256"></line>
+
+  </g>
+
+</svg>

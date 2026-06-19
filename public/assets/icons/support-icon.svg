@@ -1,0 +1,70 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient -->
+    <linearGradient id="supportGradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F2FF"></stop>
+      <stop offset="100%" stop-color="#006BFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#supportGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Head -->
+    <circle cx="256" cy="210" r="70"></circle>
+
+    <!-- Face -->
+    <circle cx="232" cy="200" r="5" fill="#00D9FF" stroke="none"></circle>
+    <circle cx="280" cy="200" r="5" fill="#00D9FF" stroke="none"></circle>
+
+    <!-- Smile -->
+    <path d="M235 235C245 248 267 248 277 235"></path>
+
+    <!-- Headset Arc -->
+    <path d="M170 210C170 145 210 105 256 105C302 105 342 145 342 210"></path>
+
+    <!-- Left Ear Cup -->
+    <rect x="145" y="190" width="35" height="70" rx="14"></rect>
+
+    <!-- Right Ear Cup -->
+    <rect x="332" y="190" width="35" height="70" rx="14"></rect>
+
+    <!-- Microphone -->
+    <path d="M332 245C360 245 375 260 375 285"></path>
+    <circle cx="375" cy="285" r="10"></circle>
+
+    <!-- Tech Rings -->
+    <circle cx="256" cy="210" r="105" opacity="0.5"></circle>
+    <circle cx="256" cy="210" r="135" opacity="0.25"></circle>
+
+    <!-- Bottom Support Panel -->
+    <rect x="165" y="355" width="182" height="42" rx="14"></rect>
+
+    <!-- Pulse Lines -->
+    <line x1="195" y1="376" x2="225" y2="376"></line>
+    <line x1="242" y1="376" x2="270" y2="376"></line>
+    <line x1="287" y1="376" x2="317" y2="376"></line>
+
+    <!-- Circuit Nodes -->
+    <circle cx="105" cy="210" r="7"></circle>
+    <line x1="112" y1="210" x2="150" y2="210"></line>
+
+    <circle cx="407" cy="210" r="7"></circle>
+    <line x1="362" y1="210" x2="400" y2="210"></line>
+
+    <!-- Decorative Tech Lines -->
+    <path d="M150 130L180 160"></path>
+    <path d="M362 160L392 130"></path>
+
+  </g>
+
+</svg>

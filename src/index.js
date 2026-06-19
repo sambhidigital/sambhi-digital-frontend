@@ -1,17 +1,58 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// src/index.js
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+
+import App from "./App";
+
+// PrimeReact
+import "primereact/resources/themes/lara-dark-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+import "primeflex/primeflex.css";
+
+// Global CSS
+import "./styles/globals.css";
+import "./styles/animations.css";
+import "./styles/responsive.css";
+
+// Context Providers
+import AppProvider from "./context/AppContext";
+import AuthProvider from "./context/AuthContext";
+import ThemeProvider from "./context/ThemeContext";
+
+const root = ReactDOM.createRoot(
+    document.getElementById("root")
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+
+    <React.StrictMode>
+
+        <HelmetProvider>
+
+            <BrowserRouter>
+
+                <ThemeProvider>
+
+                    <AuthProvider>
+
+                        <AppProvider>
+
+                            <App />
+
+                        </AppProvider>
+
+                    </AuthProvider>
+
+                </ThemeProvider>
+
+            </BrowserRouter>
+
+        </HelmetProvider>
+
+    </React.StrictMode>
+);
+

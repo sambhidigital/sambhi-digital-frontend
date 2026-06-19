@@ -1,0 +1,765 @@
+/* =========================================================
+   PORTFOLIO PAGE
+========================================================= */
+
+.portfolio-page {
+    background: #020617;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+.portfolio-page section {
+    padding: 100px 0;
+}
+
+.portfolio-page .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* ==========================================
+   PROJECT DETAILS PAGE
+========================================== */
+
+.project-details-page {
+
+    min-height: 100vh;
+
+    padding-top: 120px;
+
+    padding-bottom: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071120 0%,
+            #0f172a 40%,
+            #111827 100%
+        );
+
+    color: #ffffff;
+}
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-project-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #60a5fa;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 40px;
+
+    transition: all 0.3s ease;
+}
+
+.back-project-btn:hover {
+
+    transform: translateX(-5px);
+
+    color: #93c5fd;
+
+    border-color: rgba(96,165,250,0.4);
+}
+
+/* ==========================================
+   HERO SECTION
+========================================== */
+
+.project-details-header {
+
+    text-align: center;
+
+    max-width: 1000px;
+
+    margin: auto auto 60px;
+}
+
+.project-category {
+
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.project-details-header h1 {
+
+    font-size: 3.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+}
+
+.project-details-header p {
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: #cbd5e1;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* ==========================================
+   PROJECT IMAGE
+========================================== */
+
+.project-details-image {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    margin-bottom: 60px;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.4);
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ==========================================
+   INFO GRID
+========================================== */
+
+.project-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.project-info-card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    backdrop-filter: blur(15px);
+
+    transition: all 0.3s ease;
+}
+
+.project-info-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,0.4);
+}
+
+.project-info-card h3 {
+
+    color: #60a5fa;
+
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+}
+
+.project-info-card p {
+
+    color: #dbeafe;
+
+    line-height: 1.8;
+}
+
+/* ==========================================
+   TECHNOLOGY TAGS
+========================================== */
+
+.tech-stack {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 15px;
+}
+
+.tech-tag {
+
+    padding: 8px 16px;
+
+    border-radius: 30px;
+
+    background:
+        rgba(37,99,235,0.15);
+
+    color: #93c5fd;
+
+    border:
+        1px solid rgba(96,165,250,0.2);
+
+    font-size: 14px;
+}
+
+/* ==========================================
+   PROJECT URL BUTTON
+========================================== */
+
+.project-url-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-top: 20px;
+
+    padding: 14px 28px;
+
+    border-radius: 12px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.project-url-btn:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(37,99,235,0.4);
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .project-details-header h1 {
+
+        font-size: 2.3rem;
+    }
+
+    .project-details-header p {
+
+        font-size: 1rem;
+    }
+
+    .project-info-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.portfolio-hero-section {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    background:
+        linear-gradient(
+            rgba(3, 7, 18, 0.85),
+            rgba(3, 7, 18, 0.9)
+        ),
+        url("/public/assets/images/about/about-preview.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.portfolio-hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio-hero-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.portfolio-hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.portfolio-hero-content p {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #cbd5e1;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.section-header,
+.section-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.section-header h2,
+.section-title h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section-header h2::after,
+.section-title h2::after {
+    content: "";
+    width: 90px;
+    height: 4px;
+    display: block;
+    margin: 18px auto 0;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #06b6d4
+    );
+}
+
+.section-header p,
+.section-title p {
+    color: #94a3b8;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: auto;
+}
+
+/* =========================================================
+   GLASS CARD
+========================================================= */
+
+.glass-card,
+.portfolio-card,
+.portfolio-stat-card,
+.industry-expertise-card,
+.client-success-card,
+.technology-stack-card {
+    background: rgba(255,255,255,.05);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 24px;
+    transition: all .4s ease;
+}
+
+.glass-card:hover,
+.portfolio-card:hover,
+.portfolio-stat-card:hover,
+.industry-expertise-card:hover,
+.client-success-card:hover,
+.technology-stack-card:hover {
+    transform: translateY(-10px);
+    border-color: #3b82f6;
+    box-shadow: 0 20px 50px rgba(59,130,246,.25);
+}
+
+/* =========================================================
+   PORTFOLIO PROJECTS
+========================================================= */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+
+.portfolio-card {
+    overflow: hidden;
+}
+
+.portfolio-image {
+    overflow: hidden;
+    background: #0f172a;
+    padding: 15px;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px 15px 0 0;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-content {
+    padding: 30px;
+}
+
+.portfolio-category {
+    display: inline-block;
+    background: rgba(59,130,246,.15);
+    color: #60a5fa;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.portfolio-content h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.portfolio-content p {
+    color: #cbd5e1;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* =========================================================
+   PORTFOLIO STATS
+========================================================= */
+
+.portfolio-statistics-section {
+    background: #0f172a;
+}
+
+.portfolio-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.portfolio-stat-card {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.portfolio-stat-card h2 {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.portfolio-stat-card p {
+    color: #cbd5e1;
+}
+
+/* =========================================================
+   PROJECT GALLERY
+========================================================= */
+
+.project-gallery-section {
+    background: #020617;
+}
+
+.project-gallery-section .p-galleria {
+    background: transparent;
+}
+
+.project-gallery-section .p-galleria-item-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.project-gallery-section .p-galleria-thumbnail-container {
+    background: transparent;
+    border: none;
+    margin-top: 20px;
+}
+
+.project-gallery-section .p-galleria-thumbnail-item {
+    opacity: .7;
+    transition: .3s;
+}
+
+.project-gallery-section .p-galleria-thumbnail-item:hover {
+    opacity: 1;
+}
+
+.project-gallery-section .p-galleria-item-nav {
+    background: rgba(59,130,246,.8);
+    border-radius: 50%;
+}
+
+/* =========================================================
+   INDUSTRY EXPERTISE
+========================================================= */
+
+.industry-expertise-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 25px;
+}
+
+.industry-expertise-card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.industry-expertise-card i {
+    font-size: 3rem;
+    color: #38bdf8;
+    margin-bottom: 20px;
+}
+
+.industry-expertise-card h3 {
+    margin-bottom: 15px;
+}
+
+.industry-expertise-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   TECHNOLOGY STACK
+========================================================= */
+
+.technology-stack-section {
+    background: #0f172a;
+}
+
+.technology-stack-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+
+.technology-stack-card {
+    text-align: center;
+    padding: 35px 25px;
+}
+
+.technology-stack-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.technology-stack-card h3 {
+    margin-bottom: 15px;
+}
+
+.technology-stack-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   CLIENT SUCCESS
+========================================================= */
+
+.client-success-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.client-success-card {
+    padding: 35px 25px;
+    text-align: center;
+}
+
+.client-success-card i {
+    font-size: 3rem;
+    color: #22c55e;
+    margin-bottom: 20px;
+}
+
+.client-success-card h3 {
+    margin-bottom: 15px;
+}
+
+.client-success-card p {
+    color: #cbd5e1;
+    line-height: 1.8;
+}
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.p-button {
+    transition: .3s ease;
+}
+
+.p-button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================================================
+   IMAGE POPUP SUPPORT
+========================================================= */
+
+.popup-image {
+    width: 100%;
+    max-height: 85vh;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+
+.p-dialog-mask {
+    z-index: 9999 !important;
+}
+
+.p-dialog {
+    z-index: 10000 !important;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .portfolio-grid,
+    .technology-stack-grid,
+    .industry-expertise-grid,
+    .client-success-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .portfolio-stats-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 991px) {
+
+    .portfolio-hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .section-header h2,
+    .section-title h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .portfolio-grid,
+    .technology-stack-grid,
+    .industry-expertise-grid,
+    .client-success-grid,
+    .portfolio-stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-page section {
+        padding: 70px 0;
+    }
+
+    .portfolio-hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .portfolio-hero-content p {
+        font-size: 1rem;
+    }
+
+    .portfolio-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .portfolio-content,
+    .technology-stack-card,
+    .industry-expertise-card,
+    .client-success-card {
+        padding: 20px;
+    }
+
+    .section-header h2,
+    .section-title h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,268 @@
+.services-section {
+
+    padding: 100px 40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+
+    color: white;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+/* Header */
+
+.section-header {
+
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+
+    font-size: 48px;
+
+    font-weight: 700;
+
+    color: white;
+
+    margin-bottom: 20px;
+
+    line-height: 1.2;
+}
+
+.section-header p {
+
+    font-size: 18px;
+
+    color: #cbd5e1;
+
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    line-height: 1.8;
+}
+
+/* Grid */
+
+.services-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(260px, 1fr)
+        );
+
+    gap: 30px;
+}
+
+/* Cards */
+
+.service-card {
+
+    border-radius: 24px !important;
+
+    padding: 25px;
+
+    transition: all 0.4s ease;
+
+    background:
+        rgba(255,255,255,0.05) !important;
+
+    backdrop-filter: blur(12px);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35);
+
+    text-align: center;
+
+    overflow: hidden;
+
+    height: 100%;
+}
+
+.service-card:hover {
+
+    transform:
+        translateY(-10px);
+
+    border-color: #38bdf8;
+
+    box-shadow:
+        0 20px 40px rgba(56,189,248,0.25);
+}
+
+/* Icon */
+
+.service-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0ea5e9,
+            #2563eb
+        );
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 36px;
+
+    box-shadow:
+        0 10px 20px rgba(37,99,235,0.4);
+}
+
+/* Content */
+
+.service-card h3 {
+
+    font-size: 24px;
+
+    margin-bottom: 15px;
+
+    color: white;
+
+    line-height: 1.4;
+}
+
+.service-card p {
+
+    color: #cbd5e1;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+    .services-section {
+
+        padding: 90px 30px;
+    }
+
+    .section-header h2 {
+
+        font-size: 40px;
+    }
+
+    .section-header p {
+
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .services-section {
+
+        padding: 80px 20px;
+    }
+
+    .section-header {
+
+        margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+
+        font-size: 34px;
+    }
+
+    .section-header p {
+
+        font-size: 16px;
+    }
+
+    .service-card {
+
+        padding: 20px;
+    }
+
+    .service-icon {
+
+        width: 75px;
+
+        height: 75px;
+
+        font-size: 30px;
+    }
+
+    .service-card h3 {
+
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .services-section {
+
+        padding: 70px 15px;
+    }
+
+    .section-header h2 {
+
+        font-size: 28px;
+    }
+
+    .section-header p {
+
+        font-size: 15px;
+    }
+
+    .service-card {
+
+        padding: 18px;
+    }
+
+    .service-icon {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 26px;
+    }
+
+    .service-card h3 {
+
+        font-size: 20px;
+    }
+
+    .service-card p {
+
+        font-size: 15px;
+    }
+}

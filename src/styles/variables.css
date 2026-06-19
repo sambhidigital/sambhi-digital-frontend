@@ -1,0 +1,45 @@
+/* ========================================
+   ROOT VARIABLES
+======================================== */
+
+:root {
+
+    /* Colors */
+    --primary-color: #00d4ff;
+    --secondary-color: #7c3aed;
+    --accent-color: #38bdf8;
+
+    --dark-bg: #020617;
+    --dark-card: rgba(15, 23, 42, 0.7);
+
+    --text-white: #ffffff;
+    --text-light: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    --border-color: rgba(255, 255, 255, 0.08);
+
+    /* Gradients */
+    --primary-gradient:
+        linear-gradient(
+            135deg,
+            #00d4ff,
+            #7c3aed
+        );
+
+    /* Shadows */
+    --glass-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.37);
+
+    /* Radius */
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+
+    /* Fonts */
+    --font-primary: "Poppins", sans-serif;
+    --font-secondary: "Inter", sans-serif;
+    --font-heading: "Orbitron", sans-serif;
+
+    /* Container */
+    --container-width: 1280px;
+}

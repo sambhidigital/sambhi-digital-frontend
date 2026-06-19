@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+
+import AppRoutes from "./routes/AppRoutes";
+
+import WhatsAppButton
+from "./components/contact/WhatsAppButton";
+
+import ScrollToTop
+from "./components/layout/ScrollToTop";
+
+import AuthProvider
+from "./context/AuthContext";
+
+import "./App.css";
+
+class App extends React.Component {
+
+    render() {
+
+        return (
+
+            <AuthProvider>
+
+                <div className="app-container">
+
+                    {/* ScrollTop Routes */}
+                    <ScrollToTop />
+
+                    {/* Application Routes */}
+                    <AppRoutes />
+
+                    {/* Floating WhatsApp Button */}
+                    <WhatsAppButton />
+
+                </div>
+
+            </AuthProvider>
+        );
+    }
 }
 
 export default App;

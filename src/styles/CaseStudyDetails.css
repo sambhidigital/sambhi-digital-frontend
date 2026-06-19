@@ -1,0 +1,360 @@
+/* ==========================================
+   CASE STUDY DETAILS PAGE
+========================================== */
+
+.case-study-details-page {
+
+    min-height: 100vh;
+
+    padding-top: 120px;
+
+    padding-bottom: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071120 0%,
+            #0f172a 40%,
+            #111827 100%
+        );
+
+    color: #ffffff;
+}
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-case-study-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #60a5fa;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 40px;
+
+    transition: all 0.3s ease;
+}
+
+.back-case-study-btn:hover {
+
+    transform: translateX(-5px);
+
+    color: #93c5fd;
+
+    border-color: rgba(96,165,250,0.4);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.case-study-details-header {
+
+    text-align: center;
+
+    max-width: 1000px;
+
+    margin: auto auto 60px;
+}
+
+.case-study-industry {
+
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.case-study-details-header h1 {
+
+    font-size: 3.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+}
+
+.case-study-details-header p {
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: #cbd5e1;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.case-study-details-image {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    margin-bottom: 60px;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.4);
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ==========================================
+   INFO GRID
+========================================== */
+
+.case-study-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.case-study-info-card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    backdrop-filter: blur(15px);
+
+    transition: all 0.3s ease;
+}
+
+.case-study-info-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,0.4);
+}
+
+.case-study-info-card h3 {
+
+    color: #60a5fa;
+
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+}
+
+.case-study-info-card p {
+
+    color: #dbeafe;
+
+    line-height: 1.8;
+}
+
+/* ==========================================
+   CONTENT CARD
+========================================== */
+
+.case-study-content-card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    backdrop-filter: blur(15px);
+
+    margin-bottom: 40px;
+}
+
+.case-study-content-card h2 {
+
+    color: #60a5fa;
+
+    margin-bottom: 20px;
+
+    font-size: 1.8rem;
+}
+
+.case-study-content-card p {
+
+    color: #dbeafe;
+
+    line-height: 2;
+
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   TECHNOLOGY TAGS
+========================================== */
+
+.tech-stack {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.tech-tag {
+
+    padding: 10px 20px;
+
+    border-radius: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    color: #ffffff;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+
+    transform: translateY(-4px);
+}
+
+/* ==========================================
+   REMOVE WHITE GAP BEFORE CTA
+========================================== */
+
+.case-study-details-page {
+
+    margin-bottom: 0;
+}
+
+.case-study-details-page .container:last-child {
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.case-study-content-card:last-child {
+
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .case-study-details-header h1 {
+
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .case-study-details-page {
+
+        padding-top: 100px;
+    }
+
+    .case-study-details-header h1 {
+
+        font-size: 2.2rem;
+    }
+
+    .case-study-details-header p {
+
+        font-size: 1rem;
+    }
+
+    .case-study-info-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .case-study-content-card {
+
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .case-study-details-header h1 {
+
+        font-size: 1.8rem;
+    }
+
+    .back-case-study-btn {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+}

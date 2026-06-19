@@ -1,0 +1,54 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00C6FF"></stop>
+      <stop offset="100%" stop-color="#0052D4"></stop>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="coloredBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- AI Chip -->
+  <rect x="18" y="18" width="28" height="28" rx="6" fill="#081120" stroke="url(#aiGradient)" stroke-width="2.5" filter="url(#glow)"></rect>
+
+  <!-- AI Text -->
+  <text x="32" y="38" text-anchor="middle" fill="url(#aiGradient)" font-size="12" font-family="Arial, sans-serif" font-weight="700">
+    AI
+  </text>
+
+  <!-- Left Circuits -->
+  <path d="M8 24H18" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="6" cy="24" r="2" fill="#00C6FF"></circle>
+
+  <path d="M8 32H18" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="6" cy="32" r="2" fill="#00C6FF"></circle>
+
+  <path d="M8 40H18" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="6" cy="40" r="2" fill="#00C6FF"></circle>
+
+  <!-- Right Circuits -->
+  <path d="M46 24H56" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="58" cy="24" r="2" fill="#00C6FF"></circle>
+
+  <path d="M46 32H56" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="58" cy="32" r="2" fill="#00C6FF"></circle>
+
+  <path d="M46 40H56" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="58" cy="40" r="2" fill="#00C6FF"></circle>
+
+  <!-- Top -->
+  <path d="M32 8V18" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="32" cy="6" r="2" fill="#00C6FF"></circle>
+
+  <!-- Bottom -->
+  <path d="M32 46V56" stroke="url(#aiGradient)" stroke-width="2"></path>
+  <circle cx="32" cy="58" r="2" fill="#00C6FF"></circle>
+
+</svg>

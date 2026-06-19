@@ -1,0 +1,367 @@
+/* ==========================================
+   SOLUTION DETAILS PAGE
+========================================== */
+
+.solution-details-page {
+
+    min-height: 100vh;
+
+    padding-top: 120px;
+
+    padding-bottom: 100px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071120 0%,
+            #0f172a 40%,
+            #111827 100%
+        );
+
+    color: #ffffff;
+}
+
+/* ==========================================
+   BACK BUTTON
+========================================== */
+
+.back-solution-btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 24px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    color: #60a5fa;
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    background: rgba(255,255,255,0.04);
+
+    backdrop-filter: blur(12px);
+
+    margin-bottom: 40px;
+
+    transition: all 0.3s ease;
+}
+
+.back-solution-btn:hover {
+
+    transform: translateX(-5px);
+
+    color: #93c5fd;
+
+    border-color: rgba(96,165,250,0.4);
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.solution-details-header {
+
+    text-align: center;
+
+    max-width: 1000px;
+
+    margin: auto auto 60px;
+}
+
+.solution-industry-badge {
+
+    display: inline-block;
+
+    padding: 10px 24px;
+
+    border-radius: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #3b82f6
+        );
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 25px;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.solution-details-title {
+
+    font-size: 3.5rem;
+
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+
+    color: #ffffff;
+}
+
+.solution-summary {
+
+    font-size: 1.15rem;
+
+    line-height: 1.9;
+
+    color: #cbd5e1;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+/* ==========================================
+   META INFO
+========================================== */
+
+.solution-meta-info {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 25px;
+
+    color: #94a3b8;
+
+    font-size: 15px;
+}
+
+.solution-meta-info span {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.solution-details-image {
+
+    width: 100%;
+
+    border-radius: 24px;
+
+    margin-bottom: 60px;
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.4);
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ==========================================
+   INFO GRID
+========================================== */
+
+.solution-info-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    margin-bottom: 50px;
+}
+
+/* ==========================================
+   GLASS CARD
+========================================== */
+
+.solution-info-card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 30px;
+
+    backdrop-filter: blur(15px);
+
+    transition: all 0.3s ease;
+}
+
+.solution-info-card:hover {
+
+    transform: translateY(-8px);
+
+    border-color:
+        rgba(59,130,246,0.4);
+}
+
+.solution-info-card h3 {
+
+    color: #60a5fa;
+
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+}
+
+.solution-info-card p {
+
+    color: #dbeafe;
+
+    line-height: 1.8;
+}
+
+/* ==========================================
+   CONTENT CARD
+========================================== */
+
+.solution-content-card {
+
+    background:
+        rgba(255,255,255,0.05);
+
+    border:
+        1px solid rgba(255,255,255,0.08);
+
+    border-radius: 24px;
+
+    padding: 40px;
+
+    backdrop-filter: blur(15px);
+
+    margin-bottom: 50px;
+}
+
+.solution-content-card h2 {
+
+    color: #60a5fa;
+
+    margin-bottom: 20px;
+
+    font-size: 1.8rem;
+}
+
+.solution-content-card p {
+
+    color: #dbeafe;
+
+    line-height: 2;
+
+    font-size: 1.05rem;
+}
+
+/* ==========================================
+   CTA SECTION SPACING
+========================================== */
+
+.solution-details-page + section {
+
+    margin-top: 60px;
+}
+
+.solution-details-page {
+
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #071120 0%,
+            #0f172a 40%,
+            #111827 100%
+        );
+
+    color: #ffffff;
+
+    margin-bottom: 0;
+}
+
+.solution-details-page .container:last-child {
+
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 992px) {
+
+    .solution-details-title {
+
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .solution-details-page {
+
+        padding-top: 100px;
+    }
+
+    .solution-details-title {
+
+        font-size: 2.2rem;
+    }
+
+    .solution-summary {
+
+        font-size: 1rem;
+    }
+
+    .solution-meta-info {
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .solution-info-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .solution-content-card {
+
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .solution-details-title {
+
+        font-size: 1.8rem;
+    }
+
+    .back-solution-btn {
+
+        width: 100%;
+
+        justify-content: center;
+    }
+}

@@ -1,0 +1,84 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Futuristic Gradient -->
+    <linearGradient id="cloudGradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F5FF"></stop>
+      <stop offset="100%" stop-color="#005DFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#cloudGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Main Cloud -->
+    <path d="
+      M165 340
+      H360
+      C405 340 440 305 440 260
+      C440 220 412 188 375 182
+      C365 132 325 95 275 95
+      C225 95 185 125 172 170
+      C125 175 90 213 90 260
+      C90 305 125 340 165 340
+    "></path>
+
+    <!-- Inner Cloud Glow -->
+    <path d="
+      M190 300
+      H338
+      C368 300 392 278 392 248
+      C392 221 372 200 345 196
+      C338 162 310 138 275 138
+      C238 138 210 160 200 192
+      C165 196 140 220 140 252
+      C140 280 162 300 190 300
+    " opacity="0.4"></path>
+
+    <!-- Upload Arrow -->
+    <line x1="256" y1="275" x2="256" y2="190"></line>
+    <path d="M225 220L256 188L287 220"></path>
+
+    <!-- Data Nodes -->
+    <circle cx="150" cy="390" r="18"></circle>
+    <circle cx="256" cy="430" r="18"></circle>
+    <circle cx="362" cy="390" r="18"></circle>
+
+    <!-- Connection Lines -->
+    <line x1="165" y1="340" x2="150" y2="372"></line>
+    <line x1="256" y1="340" x2="256" y2="412"></line>
+    <line x1="347" y1="340" x2="362" y2="372"></line>
+
+    <!-- Server Blocks -->
+    <rect x="120" y="60" width="55" height="28" rx="8"></rect>
+    <rect x="337" y="60" width="55" height="28" rx="8"></rect>
+
+    <!-- Server Details -->
+    <line x1="132" y1="74" x2="160" y2="74"></line>
+    <line x1="349" y1="74" x2="377" y2="74"></line>
+
+    <!-- Tech Circuit Lines -->
+    <path d="M175 74C205 74 215 110 230 130"></path>
+    <path d="M337 74C307 74 297 110 282 130"></path>
+
+    <!-- Decorative Cyber Ring -->
+    <circle cx="256" cy="256" r="175" opacity="0.12"></circle>
+    <circle cx="256" cy="256" r="210" opacity="0.06"></circle>
+
+    <!-- Small Data Pulses -->
+    <circle cx="205" cy="205" r="6"></circle>
+    <circle cx="310" cy="185" r="6"></circle>
+    <circle cx="350" cy="250" r="6"></circle>
+    <circle cx="180" cy="255" r="6"></circle>
+
+  </g>
+
+</svg>

@@ -1,0 +1,94 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Gradient -->
+    <linearGradient id="shieldGradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F5FF"></stop>
+      <stop offset="100%" stop-color="#005DFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#shieldGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Main Shield -->
+    <path d="
+      M256 70
+      L380 120
+      V220
+      C380 320 320 390 256 430
+      C192 390 132 320 132 220
+      V120
+      Z
+    "></path>
+
+    <!-- Inner Shield -->
+    <path d="
+      M256 120
+      L335 152
+      V220
+      C335 285 297 336 256 364
+      C215 336 177 285 177 220
+      V152
+      Z
+    " opacity="0.7"></path>
+
+    <!-- Digital Lock -->
+    <rect x="216" y="220" width="80" height="70" rx="14"></rect>
+
+    <!-- Lock Arc -->
+    <path d="
+      M230 220
+      V195
+      C230 170 245 155 256 155
+      C267 155 282 170 282 195
+      V220
+    "></path>
+
+    <!-- Keyhole -->
+    <circle cx="256" cy="248" r="8"></circle>
+    <line x1="256" y1="256" x2="256" y2="274"></line>
+
+    <!-- Circuit Lines Left -->
+    <line x1="90" y1="170" x2="132" y2="170"></line>
+    <circle cx="78" cy="170" r="8"></circle>
+
+    <line x1="70" y1="256" x2="132" y2="256"></line>
+    <circle cx="58" cy="256" r="8"></circle>
+
+    <line x1="90" y1="342" x2="132" y2="342"></line>
+    <circle cx="78" cy="342" r="8"></circle>
+
+    <!-- Circuit Lines Right -->
+    <line x1="380" y1="170" x2="422" y2="170"></line>
+    <circle cx="434" cy="170" r="8"></circle>
+
+    <line x1="380" y1="256" x2="442" y2="256"></line>
+    <circle cx="454" cy="256" r="8"></circle>
+
+    <line x1="380" y1="342" x2="422" y2="342"></line>
+    <circle cx="434" cy="342" r="8"></circle>
+
+    <!-- Bottom Security Panel -->
+    <rect x="176" y="452" width="160" height="26" rx="10"></rect>
+
+    <!-- Panel Lines -->
+    <line x1="205" y1="465" x2="235" y2="465"></line>
+    <line x1="250" y1="465" x2="280" y2="465"></line>
+    <line x1="295" y1="465" x2="320" y2="465"></line>
+
+    <!-- Decorative Tech Ring -->
+    <circle cx="256" cy="256" r="150" opacity="0.2"></circle>
+    <circle cx="256" cy="256" r="185" opacity="0.1"></circle>
+
+  </g>
+
+</svg>

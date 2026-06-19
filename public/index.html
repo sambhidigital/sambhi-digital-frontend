@@ -1,43 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
+<head>
+
+    <!-- =========================================
+         BASIC META
+    ========================================== -->
+
+    <meta charset="UTF-8" />
+
+    <meta name="description"
+        content="AI Powered IT Solutions, Cloud Solutions, Networking, AI Automation and Digital Transformation Services" />
+
+    <meta name="keywords"
+        content="AI, Automation, Cloud, Networking, Website Development, Cyber Security, IT Solutions" />
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:title" content="SamBhi Digital Technology" />
+
+    <meta property="og:description" content="AI Powered IT & Networking Solutions" />
+
+    <meta property="og:image" content="%PUBLIC_URL%/assets/seo/og-image.jpg" />
+
+    <meta property="og:url" content="https://www.sambhidigital.com" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="SamBhi Digital Technology" />
+
+    <meta name="twitter:description" content="AI Powered IT & Networking Solutions" />
+
+    <meta name="twitter:image" content="%PUBLIC_URL%/assets/seo/og-image.jpg" />
+
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- =========================================
+         PRIMARY SEO
+    ========================================== -->
+
+    <title>
+        Sambhi Digital Technology | AI, Cloud & Enterprise IT Solutions
+    </title>
+
+    <meta name="title" content="Sambhi Digital Technology | AI, Cloud & Enterprise IT Solutions" />
+
+    <meta name="description"
+        content="Sambhi Digital Technology provides AI-powered enterprise solutions, cloud infrastructure, networking systems, cybersecurity, automation, DevOps, and digital transformation services." />
+
+    <meta name="keywords" content="
+        AI Solutions,
+        Enterprise IT,
+        Cloud Infrastructure,
+        Networking,
+        Cyber Security,
+        AI Automation,
+        DevOps,
+        Digital Transformation,
+        Website Development,
+        Sambhi Digital Technology,
+        Artificial Intelligence,
+        Cloud Computing,
+        Enterprise Networking,
+        IT Consultancy
+        " />
+
+    <meta name="author" content="Sambhi Digital Technology" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta name="language" content="English" />
+
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- =========================================
+         THEME
+    ========================================== -->
+
+    <meta name="theme-color" content="#020617" />
+
+    <!-- =========================================
+         FAVICON & LOGOS
+    ========================================== -->
+
+    <!-- Main Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/assets/logos/favicon.png" />
+
+    <!-- Website Icon -->
+    <link rel="shortcut icon" href="%PUBLIC_URL%/assets/logos/favicon.png" />
+
+    <!-- Apple Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/assets/logos/logo-icon.png" />
+
+    <!-- Android Icon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="%PUBLIC_URL%/assets/logos/logo-icon.png" />
+
+    <!-- Manifest -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- =========================================
+         OPEN GRAPH SEO
+    ========================================== -->
+
+    <meta property="og:type" content="website" />
+
+    <meta property="og:site_name" content="Sambhi Digital Technology" />
+
+    <meta property="og:title" content="Sambhi Digital Technology | AI & Enterprise IT Solutions" />
+
+    <meta property="og:description"
+        content="AI-powered enterprise solutions, cloud infrastructure, networking systems, cybersecurity, automation, and digital transformation services." />
+
+    <meta property="og:url" content="https://www.sambhidigital.com" />
+
+    <meta property="og:image" content="%PUBLIC_URL%/assets/images/hero/ai-hero.png" />
+
+    <meta property="og:image:width" content="1200" />
+
+    <meta property="og:image:height" content="630" />
+
+    <!-- =========================================
+         TWITTER SEO
+    ========================================== -->
+
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <meta name="twitter:title" content="Sambhi Digital Technology" />
+
+    <meta name="twitter:description"
+        content="AI-powered enterprise infrastructure and digital transformation services." />
+
+    <meta name="twitter:image" content="%PUBLIC_URL%/assets/images/hero/ai-hero.png" />
+
+    <!-- =========================================
+         CANONICAL URL
+    ========================================== -->
+
+    <link rel="canonical" href="https://www.sambhidigital.com" />
+
+    <!-- =========================================
+         GOOGLE FONTS
+    ========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- =========================================
+         PRIME ICONS
+    ========================================== -->
+
+    <link rel="stylesheet" href="https://unpkg.com/primeicons/primeicons.css" />
+
+</head>
+
+<script type="application/ld+json">
+{
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"SamBhi Digital Technology",
+    "url":"https://www.sambhidigital.com",
+    "logo":"https://www.sambhidigital.com/logo.png",
+    "description":"AI Powered IT & Networking Solutions",
+    "sameAs":[
+        "https://www.linkedin.com/company/sambhi",
+        "https://www.facebook.com/sambhi"
+    ]
+}
+</script>
+
+<body>
+
+    <!-- =========================================
+         NOSCRIPT
+    ========================================== -->
+
+    <noscript>
+        You need to enable JavaScript to run this application.
+    </noscript>
+
+    <!-- =========================================
+         ROOT APP
+    ========================================== -->
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+</body>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
 </html>

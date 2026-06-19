@@ -1,0 +1,89 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <!-- Neon Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"></feGaussianBlur>
+      <feMerge>
+        <feMergeNode in="blur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+
+    <!-- Futuristic Gradient -->
+    <linearGradient id="aiGradient" x1="0" y1="0" x2="512" y2="512">
+      <stop offset="0%" stop-color="#00F5FF"></stop>
+      <stop offset="100%" stop-color="#005DFF"></stop>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#aiGradient)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+
+    <!-- Brain Outline Left -->
+    <path d="
+      M210 120
+      C160 120 125 160 125 210
+      C125 245 142 272 165 285
+      C165 335 195 372 245 382
+    "></path>
+
+    <!-- Brain Outline Right -->
+    <path d="
+      M302 120
+      C352 120 387 160 387 210
+      C387 245 370 272 347 285
+      C347 335 317 372 267 382
+    "></path>
+
+    <!-- Center Brain Line -->
+    <line x1="256" y1="120" x2="256" y2="382"></line>
+
+    <!-- AI Core -->
+    <circle cx="256" cy="250" r="42"></circle>
+
+    <!-- AI Text -->
+    <text x="228" y="260" fill="#00E5FF" font-size="28" font-family="Arial" font-weight="bold" stroke="none">
+      AI
+    </text>
+
+    <!-- Left Neural Circuits -->
+    <line x1="125" y1="185" x2="185" y2="185"></line>
+    <circle cx="110" cy="185" r="10"></circle>
+
+    <line x1="125" y1="250" x2="175" y2="250"></line>
+    <circle cx="105" cy="250" r="10"></circle>
+
+    <line x1="145" y1="320" x2="200" y2="320"></line>
+    <circle cx="130" cy="320" r="10"></circle>
+
+    <!-- Right Neural Circuits -->
+    <line x1="327" y1="185" x2="387" y2="185"></line>
+    <circle cx="402" cy="185" r="10"></circle>
+
+    <line x1="337" y1="250" x2="387" y2="250"></line>
+    <circle cx="407" cy="250" r="10"></circle>
+
+    <line x1="312" y1="320" x2="367" y2="320"></line>
+    <circle cx="382" cy="320" r="10"></circle>
+
+    <!-- Floating Data Nodes -->
+    <circle cx="190" cy="145" r="7"></circle>
+    <circle cx="322" cy="145" r="7"></circle>
+
+    <circle cx="185" cy="360" r="7"></circle>
+    <circle cx="327" cy="360" r="7"></circle>
+
+    <!-- Decorative Connection Curves -->
+    <path d="M190 145C215 165 225 185 235 205"></path>
+    <path d="M322 145C297 165 287 185 277 205"></path>
+
+    <path d="M185 360C210 340 225 320 235 300"></path>
+    <path d="M327 360C302 340 287 320 277 300"></path>
+
+    <!-- Outer Cyber Rings -->
+    <circle cx="256" cy="250" r="150" opacity="0.12"></circle>
+    <circle cx="256" cy="250" r="190" opacity="0.06"></circle>
+
+  </g>
+
+</svg>
