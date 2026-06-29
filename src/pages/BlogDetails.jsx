@@ -4,6 +4,7 @@ import React from "react";
 import Navbar from "../components/layout/Navbar";
 import Footer from "../components/layout/Footer";
 import { Link } from "react-router-dom";
+import DOMPurify from "dompurify";
 
 import {
     updateSEO,
@@ -14,7 +15,7 @@ import {
 import {
     getBlogById
 }
-from "../services/blogService";
+    from "../services/blogService";
 
 import "../styles/Blog.css"
 
@@ -305,9 +306,12 @@ class BlogDetails extends React.Component {
                                 Article Content
                             </h2>
 
-                            <p>
-                                {blog.content || "Content unavailable."}
-                            </p>
+                            <div
+                                className="blog-content"
+                                dangerouslySetInnerHTML={{
+                                    __html: DOMPurify.sanitize(blog.content)
+                                }}
+                            />
 
                         </div>
 
