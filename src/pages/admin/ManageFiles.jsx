@@ -8,6 +8,7 @@ import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 
 import "../../styles/Admin.css";
+import { FILE_BASE_URL } from "../../services/api";
 
 import { Toast } from "primereact/toast";
 
@@ -28,6 +29,16 @@ import {
 
 class ManageFiles
     extends React.Component {
+
+    getFileUrl = (rowData) => {
+        if (!rowData || !rowData.fileUrl) return "";
+
+        if (rowData.fileUrl.startsWith("http")) {
+            return rowData.fileUrl;
+        }
+
+        return `${FILE_BASE_URL}${rowData.fileUrl}`;
+    };
 
     constructor(props) {
 
@@ -161,32 +172,20 @@ class ManageFiles
         });
     };
 
-    downloadTemplate =
-        (rowData) => {
-
-            return (
-
-                <Button
-
-                    label="Download"
-
-                    className="p-button-text"
-
-                    onClick={() => {
-
-                        window.open(
-
-                            `http://localhost:8080${rowData.fileUrl}`,
-
-                            "_blank"
-
-                        );
-
-                    }}
-
-                />
-            );
-        };
+    downloadTemplate = (rowData) => {
+        return (
+            <Button
+                label="Download"
+                className="p-button-text"
+                onClick={() => {
+                    window.open(
+                        this.getFileUrl(rowData),
+                        "_blank"
+                    );
+                }}
+            />
+        );
+    };
 
     fileSizeTemplate =
         (rowData) => {
@@ -226,24 +225,15 @@ class ManageFiles
                     />
 
                     <Button
-
                         icon="pi pi-download"
-
                         className="p-button-info p-button-sm"
-
-                        style={{
-                            marginLeft: "8px"
-                        }}
-
+                        style={{ marginLeft: "8px" }}
                         onClick={() =>
-
                             window.open(
-                                `http://localhost:8080${rowData.fileUrl}`,
+                                this.getFileUrl(rowData),
                                 "_blank"
                             )
-
                         }
-
                     />
 
                     <Button
@@ -368,7 +358,7 @@ class ManageFiles
                                     :
 
                                     <img
-                                        src={`http://localhost:8080${rowData.fileUrl}`}
+                                        src={this.getFileUrl(rowData)}
                                         alt="Preview"
                                         className="file-preview-thumb"
                                         style={{
@@ -533,11 +523,8 @@ class ManageFiles
                                         onClick={() =>
 
                                             window.open(
-
-                                                `http://localhost:8080${this.state.selectedFile.fileUrl}`,
-
+                                                this.getFileUrl(this.state.selectedFile),
                                                 "_blank"
-
                                             )
 
                                         }
@@ -547,7 +534,7 @@ class ManageFiles
                                     :
 
                                     <img
-                                        src={`http://localhost:8080${this.state.selectedFile.fileUrl}`}
+                                        src={this.getFileUrl(this.state.selectedFile)}
                                         alt="Preview"
                                         className="file-preview-large"
                                         style={{
