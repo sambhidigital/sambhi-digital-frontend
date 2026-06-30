@@ -12,6 +12,7 @@ import Navbar from "../components/layout/Navbar";
 import profileService from "../services/profileService";
 import { Password } from "primereact/password";
 import { FileUpload } from "primereact/fileupload";
+import { FILE_BASE_URL } from "../../services/api";
 
 import "../styles/Profile.css";
 
@@ -403,6 +404,12 @@ class Profile extends React.Component {
             );
         }
 
+        const profileImage = profile?.profileImage
+            ? profile.profileImage.startsWith("http")
+                ? profile.profileImage
+                : `${FILE_BASE_URL}${profile.profileImage}`
+            : "/assets/images/default-profile.png";
+
         return (
 
             <>
@@ -427,10 +434,12 @@ class Profile extends React.Component {
                                         profile?.profileImage ?
 
                                             <img
-                                                src={
-                                                    `http://localhost:8080${profile.profileImage}`
-                                                }
+                                                src={profileImage}
                                                 alt="Profile"
+                                                className="profile-image"
+                                                onError={(e) => {
+                                                    e.target.src = "/assets/images/default-profile.png";
+                                                }}
                                             />
 
                                             :
