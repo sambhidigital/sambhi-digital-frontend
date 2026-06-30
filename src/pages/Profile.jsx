@@ -12,7 +12,7 @@ import Navbar from "../components/layout/Navbar";
 import profileService from "../services/profileService";
 import { Password } from "primereact/password";
 import { FileUpload } from "primereact/fileupload";
-import { FILE_BASE_URL } from "../../services/api";
+import { FILE_BASE_URL } from "../services/api";
 
 import "../styles/Profile.css";
 
@@ -431,7 +431,7 @@ class Profile extends React.Component {
                                 <div className="profile-avatar">
 
                                     {
-                                        profile?.profileImage ?
+                                        profile?.profileImage ? (
 
                                             <img
                                                 src={profileImage}
@@ -442,9 +442,11 @@ class Profile extends React.Component {
                                                 }}
                                             />
 
-                                            :
+                                        ) : (
 
                                             <i className="pi pi-user" />
+
+                                        )
                                     }
 
                                 </div>
